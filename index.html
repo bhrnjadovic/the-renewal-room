@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkinSci - Sydney's leading regenerative medicine clinic in Balmain. Evidence-based PRF therapy, orthobiologics, IV infusions and aesthetic treatments.">
+  <title>SkinSci | Regenerative Medicine - Balmain, Sydney</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { 400: '#C9A96E', 500: '#A8854A', 600: '#8A6B30' },
+            purple: { 400: '#8B6BAA', 500: '#6B4C8A', 600: '#4A2D6B' }
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Cormorant Garamond', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" style="width:0%"></div>
+
+  <!-- Navigation -->
+  <nav class="nav-main">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-display font-bold tracking-tight">Skin<span class="text-gradient">Sci</span></a>
+      <!-- Desktop Nav -->
+      <div class="nav-desktop hidden lg:flex items-center gap-8">
+        <a href="our-team.html" class="nav-link">Our Team</a>
+        <div class="dropdown">
+          <a href="#services" class="nav-link flex items-center gap-1">Services <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="prf-aesthetic.html" class="dropdown-item">PRF Aesthetic</a>
+            <a href="prf-orthopaedic.html" class="dropdown-item">PRF Orthopaedic</a>
+            <a href="prf-hair.html" class="dropdown-item">PRF Hair Regeneration</a>
+            <a href="iv-infusions.html" class="dropdown-item">IV Infusions</a>
+            <a href="aesthetic-treatments.html" class="dropdown-item">Aesthetic Treatments</a>
+          </div>
+        </div>
+        <a href="prices.html" class="nav-link">Prices</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="#book" class="btn-primary text-sm">Book Now</a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn lg:hidden" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div class="nav-mobile lg:hidden">
+      <a href="our-team.html" class="nav-link">Our Team</a>
+      <div class="dropdown">
+        <a href="#" class="nav-link flex items-center justify-between">Services <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></a>
+        <div class="dropdown-menu">
+          <a href="prf-aesthetic.html" class="dropdown-item">PRF Aesthetic</a>
+          <a href="prf-orthopaedic.html" class="dropdown-item">PRF Orthopaedic</a>
+          <a href="prf-hair.html" class="dropdown-item">PRF Hair Regeneration</a>
+          <a href="iv-infusions.html" class="dropdown-item">IV Infusions</a>
+          <a href="aesthetic-treatments.html" class="dropdown-item">Aesthetic Treatments</a>
+        </div>
+      </div>
+      <a href="prices.html" class="nav-link">Prices</a>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+      <a href="#book" class="btn-primary text-sm mt-6 justify-center">Book Now</a>
+    </div>
+  </nav>
+  <div class="mobile-overlay lg:hidden"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-gradient"></div>
+    <!-- Particles -->
+    <div class="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
+      <div class="hero-particle" style="top:15%;left:10%;animation-delay:0s"></div>
+      <div class="hero-particle" style="top:60%;left:85%;animation-delay:3s"></div>
+      <div class="hero-particle" style="top:30%;left:70%;animation-delay:6s"></div>
+      <div class="hero-particle" style="top:75%;left:25%;animation-delay:9s"></div>
+      <div class="hero-particle" style="top:45%;left:50%;animation-delay:12s"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-32 text-center">
+      <p class="text-xs font-sans font-medium tracking-[0.3em] text-gold-400 uppercase mb-6 reveal">Regenerative Medicine &bull; Balmain, Sydney</p>
+      <h1 class="text-5xl md:text-7xl font-display font-bold mb-6 reveal" style="transition-delay:0.1s">Where Science Meets<br><span class="text-gradient">Regeneration</span></h1>
+      <p class="max-w-2xl mx-auto text-lg text-[#A0A0B0] font-sans mb-10 reveal" style="transition-delay:0.2s">Evidence-based regenerative therapies harnessing your body's own healing potential. Advanced PRF, orthobiologics, and longevity medicine &mdash; delivered with clinical precision.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center reveal" style="transition-delay:0.3s">
+        <a href="#book" class="btn-primary">Book Consultation</a>
+        <a href="#services" class="btn-secondary">Explore Services</a>
+      </div>
+      <!-- Trust Badges -->
+      <div class="flex flex-wrap justify-center gap-8 mt-16 reveal" style="transition-delay:0.4s">
+        <div class="flex items-center gap-2 text-sm text-[#A0A0B0]">
+          <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          AHPRA Registered
+        </div>
+        <div class="flex items-center gap-2 text-sm text-[#A0A0B0]">
+          <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          Evidence-Based
+        </div>
+        <div class="flex items-center gap-2 text-sm text-[#A0A0B0]">
+          <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/></svg>
+          500+ Patients Treated
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / INTRO ===== -->
+  <section class="py-24 relative">
+    <div class="section-divider"></div>
+    <div class="max-w-7xl mx-auto px-6 pt-16">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left">
+          <p class="text-xs font-sans font-medium tracking-[0.3em] text-gold-400 uppercase mb-4">The SkinSci Difference</p>
+          <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Pioneering Regenerative Medicine in Sydney's Inner West</h2>
+          <p class="text-[#A0A0B0] text-lg mb-6">SkinSci combines cutting-edge regenerative science with personalised patient care. Our clinic specialises in orthobiologics, platelet-rich fibrin (PRF) therapy, and evidence-based longevity protocols designed to harness your body's innate healing capacity.</p>
+          <p class="text-[#A0A0B0] mb-8">From joint regeneration and pain management to aesthetic rejuvenation and hair restoration, every treatment at SkinSci is grounded in peer-reviewed research and delivered by AHPRA-registered practitioners.</p>
+          <div class="grid grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="stat-number counter" data-target="10" data-suffix="+">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="text-center">
+              <div class="stat-number counter" data-target="500" data-suffix="+">0</div>
+              <div class="stat-label">Patients</div>
+            </div>
+            <div class="text-center">
+              <div class="stat-number counter" data-target="98" data-suffix="%">0</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="relative rounded-3xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-purple-500/20 to-gold-400/20 flex items-center justify-center border border-[rgba(255,255,255,0.1)]">
+            <div class="text-center p-8">
+              <svg class="w-20 h-20 mx-auto text-gold-400 opacity-40 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+              <p class="text-[#A0A0B0] text-sm">Clinic imagery coming soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="py-24 section-gradient">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <p class="text-xs font-sans font-medium tracking-[0.3em] text-gold-400 uppercase mb-4">Our Services</p>
+        <h2 class="text-4xl md:text-5xl font-display font-bold">Advanced Regenerative Treatments</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+        <!-- PRF Aesthetic -->
+        <a href="prf-aesthetic.html" class="card group block">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3 group-hover:text-gold-400 transition-colors">PRF Aesthetic</h3>
+          <p class="text-[#A0A0B0] text-sm leading-relaxed">Harness platelet-rich fibrin for natural skin rejuvenation, collagen stimulation, and facial renewal without synthetic fillers.</p>
+        </a>
+        <!-- PRF Orthopaedic -->
+        <a href="prf-orthopaedic.html" class="card group block">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3 group-hover:text-gold-400 transition-colors">PRF Orthopaedic</h3>
+          <p class="text-[#A0A0B0] text-sm leading-relaxed">Regenerative injection therapy for joints, tendons, and soft tissue. Promote genuine healing instead of masking pain.</p>
+        </a>
+        <!-- PRF Hair -->
+        <a href="prf-hair.html" class="card group block">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3 group-hover:text-gold-400 transition-colors">PRF Hair Regeneration</h3>
+          <p class="text-[#A0A0B0] text-sm leading-relaxed">Stimulate dormant hair follicles and restore density with natural growth factor therapy. No surgery required.</p>
+        </a>
+        <!-- IV Infusions -->
+        <a href="iv-infusions.html" class="card group block">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3 group-hover:text-gold-400 transition-colors">IV Infusions</h3>
+          <p class="text-[#A0A0B0] text-sm leading-relaxed">Medical-grade vitamin and nutrient infusions for 100% bioavailability. Customised protocols for energy, immunity, and recovery.</p>
+        </a>
+        <!-- Aesthetic Treatments -->
+        <a href="aesthetic-treatments.html" class="card group block">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3 group-hover:text-gold-400 transition-colors">Aesthetic Treatments</h3>
+          <p class="text-[#A0A0B0] text-sm leading-relaxed">Advanced non-surgical treatments including microneedling, RF therapy, laser, LED, and skin boosters for natural rejuvenation.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY SKINSCI ===== -->
+  <section class="py-24 section-darker">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <p class="text-xs font-sans font-medium tracking-[0.3em] text-gold-400 uppercase mb-4">Why SkinSci</p>
+        <h2 class="text-4xl md:text-5xl font-display font-bold">Rooted in Science, Focused on Results</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 stagger-children">
+        <div class="card-glass text-center p-8">
+          <div class="w-16 h-16 mx-auto rounded-full bg-purple-500/10 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3">Evidence-Based Protocols</h3>
+          <p class="text-[#A0A0B0] text-sm">Every treatment is grounded in peer-reviewed research. We continuously update protocols as new evidence emerges.</p>
+        </div>
+        <div class="card-glass text-center p-8">
+          <div class="w-16 h-16 mx-auto rounded-full bg-purple-500/10 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3">Autologous Therapies</h3>
+          <p class="text-[#A0A0B0] text-sm">PRF uses your own blood &mdash; no synthetic chemicals, no foreign substances. Your body's healing factors, concentrated and delivered precisely.</p>
+        </div>
+        <div class="card-glass text-center p-8">
+          <div class="w-16 h-16 mx-auto rounded-full bg-purple-500/10 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold mb-3">Holistic Approach</h3>
+          <p class="text-[#A0A0B0] text-sm">We treat the whole person, not just symptoms. Our integrative protocols address root causes through regenerative medicine and nutritional optimisation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left">
+          <p class="text-xs font-sans font-medium tracking-[0.3em] text-gold-400 uppercase mb-4">Your Journey</p>
+          <h2 class="text-4xl md:text-5xl font-display font-bold mb-12">How It Works</h2>
+          <div class="process-step" data-step="1">
+            <h4 class="text-lg font-bold font-sans mb-2">Consultation</h4>
+            <p class="text-[#A0A0B0] text-sm">Comprehensive assessment of your health goals and a personalised treatment plan tailored to your needs.</p>
+          </div>
+          <div class="process-step" data-step="2">
+            <h4 class="text-lg font-bold font-sans mb-2">Diagnostics</h4>
+            <p class="text-[#A0A0B0] text-sm">Advanced imaging and blood work to guide your protocol with precision and ensure optimal outcomes.</p>
+          </div>
+          <div class="process-step" data-step="3">
+            <h4 class="text-lg font-bold font-sans mb-2">Treatment</h4>
+            <p class="text-[#A0A0B0] text-sm">Precision regenerative therapies delivered by experienced, AHPRA-registered practitioners in our state-of-the-art clinic.</p>
+          </div>
+          <div class="process-step" data-step="4">
+            <h4 class="text-lg font-bold font-sans mb-2">Follow-Up</h4>
+            <p class="text-[#A0A0B0] text-sm">Ongoing monitoring, protocol optimisation, and support to ensure lasting results and continued improvement.</p>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="rounded-3xl overflow-hidden aspect-square bg-gradient-to-br from-gold-400/10 to-purple-500/10 flex items-center justify-center border border-[rgba(255,255,255,0.1)]">
+            <div class="text-center p-8">
+              <svg class="w-20 h-20 mx-auto text-gold-400 opacity-40 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+              <p class="text-[#A0A0B0] text-sm">Process imagery coming soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="py-24 section-gradient">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <p class="text-xs font-sans font-medium tracking-[0.3em] text-gold-400 uppercase mb-4">Patient Stories</p>
+        <h2 class="text-4xl md:text-5xl font-display font-bold">Real Results, Real People</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 stagger-children">
+        <div class="card p-8">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-[#A0A0B0] text-sm mb-6 italic leading-relaxed">"After years of knee pain and cortisone injections, PRF therapy at SkinSci has been a game-changer. I'm back to running and the improvement keeps getting better months later."</p>
+          <div>
+            <p class="font-bold text-sm">Michael R.</p>
+            <p class="text-gold-400 text-xs">PRF Orthopaedic</p>
+          </div>
+        </div>
+        <div class="card p-8">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-[#A0A0B0] text-sm mb-6 italic leading-relaxed">"The PRF facial treatment has completely transformed my skin. My complexion is brighter, my fine lines have softened, and it just looks naturally healthy. The team at SkinSci is exceptional."</p>
+          <div>
+            <p class="font-bold text-sm">Sarah L.</p>
+            <p class="text-gold-400 text-xs">PRF Aesthetic</p>
+          </div>
+        </div>
+        <div class="card p-8">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-[#A0A0B0] text-sm mb-6 italic leading-relaxed">"I was sceptical about PRF for hair loss, but after four sessions I can genuinely see new growth. My hairdresser noticed before I even told her. Highly recommend the team."</p>
+          <div>
+            <p class="font-bold text-sm">David T.</p>
+            <p class="text-gold-400 text-xs">PRF Hair Regeneration</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / BOOKING ===== -->
+  <section id="book" class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/10 via-transparent to-gold-400/5"></div>
+    <div class="relative max-w-4xl mx-auto px-6 text-center reveal">
+      <p class="text-xs font-sans font-medium tracking-[0.3em] text-gold-400 uppercase mb-4">Get Started</p>
+      <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Begin Your Regenerative Journey</h2>
+      <p class="text-[#A0A0B0] text-lg mb-10 max-w-2xl mx-auto">Book a consultation with our team to discuss your goals and discover which regenerative treatment is right for you.</p>
+      <!-- Calendly Embed Placeholder -->
+      <div id="calendly-embed" class="card-glass p-12 mb-8 max-w-xl mx-auto">
+        <svg class="w-12 h-12 mx-auto text-gold-400 opacity-50 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        <p class="text-[#A0A0B0] text-sm mb-6">Calendly booking widget will be embedded here</p>
+        <a href="#" class="btn-primary">Book Consultation</a>
+      </div>
+      <p class="text-[#A0A0B0] text-sm">Or call us directly: <a href="tel:+61200000000" class="text-gold-400 hover:underline">(02) XXXX XXXX</a></p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- Col 1: Logo & About -->
+        <div>
+          <a href="index.html" class="text-2xl font-display font-bold tracking-tight mb-4 block">Skin<span class="text-gradient">Sci</span></a>
+          <p class="text-[#A0A0B0] text-sm mb-6">Evidence-based regenerative medicine in Balmain, Sydney. Harnessing science for natural healing and rejuvenation.</p>
+          <div class="flex gap-4">
+            <a href="#" class="text-[#A0A0B0] hover:text-gold-400 transition-colors" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="text-[#A0A0B0] hover:text-gold-400 transition-colors" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="text-[#A0A0B0] hover:text-gold-400 transition-colors" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="font-sans font-semibold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-sm">Home</a></li>
+            <li><a href="our-team.html" class="text-sm">Our Team</a></li>
+            <li><a href="prices.html" class="text-sm">Prices</a></li>
+            <li><a href="research.html" class="text-sm">Research</a></li>
+            <li><a href="contact.html" class="text-sm">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Services -->
+        <div>
+          <h4 class="font-sans font-semibold text-sm uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="prf-aesthetic.html" class="text-sm">PRF Aesthetic</a></li>
+            <li><a href="prf-orthopaedic.html" class="text-sm">PRF Orthopaedic</a></li>
+            <li><a href="prf-hair.html" class="text-sm">PRF Hair Regeneration</a></li>
+            <li><a href="iv-infusions.html" class="text-sm">IV Infusions</a></li>
+            <li><a href="aesthetic-treatments.html" class="text-sm">Aesthetic Treatments</a></li>
+          </ul>
+        </div>
+        <!-- Col 4: Contact -->
+        <div>
+          <h4 class="font-sans font-semibold text-sm uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm text-[#A0A0B0]">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Balmain, Sydney NSW 2041
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              (02) XXXX XXXX
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              info@skinsci.com.au
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Mon-Sat: 9am-6pm
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Bottom Bar -->
+      <div class="section-divider mb-8"></div>
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#A0A0B0]">
+        <p>&copy; 2026 SkinSci Regenerative Medicine. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-gold-400">Privacy Policy</a>
+          <a href="#" class="hover:text-gold-400">Terms of Service</a>
+          <a href="#" class="hover:text-gold-400">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
