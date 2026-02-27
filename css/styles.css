@@ -227,7 +227,7 @@ h6 {
     text-transform: uppercase;
     text-decoration: none;
     border: none;
-    border-radius: 100px;
+    border-radius: 12px;
     cursor: pointer;
     transition: all var(--transition-smooth);
     position: relative;
@@ -271,7 +271,7 @@ h6 {
     text-transform: uppercase;
     text-decoration: none;
     border: 2px solid var(--accent);
-    border-radius: 100px;
+    border-radius: 12px;
     cursor: pointer;
     transition: all var(--transition-smooth);
     position: relative;
@@ -306,7 +306,7 @@ h6 {
     font-weight: 500;
     text-decoration: none;
     border: 1px solid rgba(246, 244, 242, 0.12);
-    border-radius: 100px;
+    border-radius: 12px;
     cursor: pointer;
     transition: all var(--transition-smooth);
     backdrop-filter: blur(10px);
@@ -816,8 +816,8 @@ select.form-input {
     }
     .nav-mobile .nav-link {
         display: block;
-        padding: 1rem 0;
-        font-size: 1rem;
+        padding: 0.875rem 0;
+        font-size: 0.875rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
     .nav-mobile .dropdown-menu {
@@ -828,7 +828,7 @@ select.form-input {
         box-shadow: none;
         border: none;
         background: transparent;
-        padding: 0 0 0 1rem;
+        padding: 0.25rem 0 0.25rem 1.25rem;
         display: none;
         min-width: auto;
     }
@@ -836,8 +836,10 @@ select.form-input {
         display: block;
     }
     .nav-mobile .dropdown-item {
-        padding: 0.75rem 0;
+        padding: 0.625rem 0;
+        padding-left: 0;
         border-left: none;
+        font-size: 0.8125rem;
     }
     .mobile-overlay {
         position: fixed;
