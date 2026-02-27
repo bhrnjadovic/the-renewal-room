@@ -801,14 +801,15 @@ select.form-input {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: 85%;
         max-width: 400px;
         height: 100vh;
         background: var(--dark-surface);
-        padding: 5rem 2rem 2rem;
+        padding: 5rem 1.5rem 2rem;
         transition: right var(--transition-smooth);
         z-index: 999;
         overflow-y: auto;
+        overflow-x: hidden;
         border-left: 1px solid rgba(255, 255, 255, 0.08);
     }
     .nav-mobile.open {
@@ -823,23 +824,33 @@ select.form-input {
     .nav-mobile .dropdown-menu {
         position: static;
         transform: none;
+        left: auto;
         opacity: 1;
         visibility: visible;
         box-shadow: none;
         border: none;
+        border-radius: 0;
         background: transparent;
-        padding: 0.25rem 0 0.25rem 1.25rem;
+        padding: 0.25rem 0 0.5rem 1rem;
         display: none;
         min-width: auto;
+        width: 100%;
     }
     .nav-mobile .dropdown.open .dropdown-menu {
         display: block;
     }
     .nav-mobile .dropdown-item {
-        padding: 0.625rem 0;
+        display: block;
+        padding: 0.5rem 0;
         padding-left: 0;
         border-left: none;
         font-size: 0.8125rem;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    .nav-mobile .dropdown-item:hover {
+        padding-left: 0.5rem;
+        background: none;
     }
     .mobile-overlay {
         position: fixed;
