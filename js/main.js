@@ -1,4 +1,4 @@
-/* SkinSci - Main JavaScript */
+/* The Renewal Room - Main JavaScript */
 document.addEventListener('DOMContentLoaded', function() {
 
   // --- Scroll Progress Bar ---
